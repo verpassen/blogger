@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <meta charset="utf-8">
-<title>&lt;螺紋&gt; TPI 換算 - Brent&#39;s Hexo</title>
+<title>&lt;螺紋&gt; 尺寸與公差 - Brent&#39;s Hexo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -18,18 +18,21 @@
 
 
 
-    <meta name="description" content="Thread Pitch Vs. Threads per inchTPI (thread per pitch) -  每英寸有幾牙thread per pitch 簡稱 TPI ，常見於鎖固件的標稱(註.1)  單位: 英制(US) 格式: 1&#x2F;4”-20X2”   1&#x2F;4” 代表螺紋直徑為1&#x2F;4英吋每英吋20牙螺紋長度總長2英吋  thread pitch 牙距 單位: 公制(Metric) 格">
+    <meta name="description" content="螺紋 Screw Thread主要分兩大類， 公制(Metric screw thread)與英制 (Unitfied inch thread)兩者螺紋的輪廓相同 都是角度為60 Thread profile螺距，代表的意義為當螺絲旋轉一圈，前進&#x2F;後退的移動距離以下用P代表螺紋的螺距。  Basic Major Diameter Dmaj:　 Basic Pitch Diameter Dp: 基圓">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&lt;螺紋&gt; TPI 換算">
-<meta property="og:url" content="https://verpassen.github.io/2021/05/30/threading-pitch/index.html">
+<meta property="og:title" content="&lt;螺紋&gt; 尺寸與公差">
+<meta property="og:url" content="https://verpassen.github.io/2021/06/17/year-undefined-17-threading/index.html">
 <meta property="og:site_name" content="Brent&#39;s Hexo">
-<meta property="og:description" content="Thread Pitch Vs. Threads per inchTPI (thread per pitch) -  每英寸有幾牙thread per pitch 簡稱 TPI ，常見於鎖固件的標稱(註.1)  單位: 英制(US) 格式: 1&#x2F;4”-20X2”   1&#x2F;4” 代表螺紋直徑為1&#x2F;4英吋每英吋20牙螺紋長度總長2英吋  thread pitch 牙距 單位: 公制(Metric) 格">
+<meta property="og:description" content="螺紋 Screw Thread主要分兩大類， 公制(Metric screw thread)與英制 (Unitfied inch thread)兩者螺紋的輪廓相同 都是角度為60 Thread profile螺距，代表的意義為當螺絲旋轉一圈，前進&#x2F;後退的移動距離以下用P代表螺紋的螺距。  Basic Major Diameter Dmaj:　 Basic Pitch Diameter Dp: 基圓">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-05-30T02:16:39.000Z">
-<meta property="article:modified_time" content="2021-08-05T15:14:12.689Z">
+<meta property="og:image" content="https://verpassen.github.io/2021/06/17/year-undefined-17-threading/ISO_and_UTS_Thread_Dimensions.png">
+<meta property="og:image" content="https://cloud.degoo.com/share/JVPQo5LQE__I3KBr2vhfvQ">
+<meta property="article:published_time" content="2021-06-17T12:54:23.000Z">
+<meta property="article:modified_time" content="2021-06-20T14:25:40.887Z">
 <meta property="article:author" content="Brent Chang">
 <meta property="article:tag" content="note">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://verpassen.github.io/2021/06/17/year-undefined-17-threading/ISO_and_UTS_Thread_Dimensions.png">
 
 
 
@@ -123,43 +126,49 @@
                     
                     
                     
-                    <a class="navbar-item" href="#Thread-Pitch-Vs-Threads-per-inch">1&nbsp;&nbsp;<b>Thread Pitch Vs. Threads per inch</b></a>
-                    
-                    
-                    
-                    <a class="navbar-item" href="#TPI-thread-per-pitch-每英寸有幾牙">1.1.1&nbsp;&nbsp;TPI (thread per pitch) -  每英寸有幾牙</a>
-                    
-                    
-                    
-                    <a class="navbar-item" href="#thread-pitch-牙距">1.1.2&nbsp;&nbsp;thread pitch 牙距</a>
-                    
-                    
-                    
-                    <a class="navbar-item" href="#TPI-與-Thread-Pitch-的換算">1.2&nbsp;&nbsp;TPI 與 Thread Pitch 的換算</a>
+                    <a class="navbar-item" href="#螺紋-Screw-Thread">1&nbsp;&nbsp;<b>螺紋 Screw Thread</b></a>
                     
                     
                     <hr class="navbar-divider">
                     
                     
-                    <a class="navbar-item" href="#常見的螺紋種類">2&nbsp;&nbsp;<b>常見的螺紋種類</b></a>
+                    <a class="navbar-item" href="#Thread-profile">2&nbsp;&nbsp;<b>Thread profile</b></a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#粗牙-vs-細牙-Coarse-Vs-Fine">2.1&nbsp;&nbsp;粗牙 vs. 細牙 (Coarse Vs. Fine)</a>
                     
                     
                     <hr class="navbar-divider">
                     
                     
-                    <a class="navbar-item" href="#註解">3&nbsp;&nbsp;<b>註解</b></a>
+                    <a class="navbar-item" href="#公差-Tolerance">3&nbsp;&nbsp;<b>公差 Tolerance</b></a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#表示法">3.1&nbsp;&nbsp;表示法</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#左螺紋-vs-右螺紋">3.2&nbsp;&nbsp;左螺紋 vs. 右螺紋</a>
                     
                     
                     <hr class="navbar-divider">
                     
                     
-                    <a class="navbar-item" href="#參考">4&nbsp;&nbsp;<b>參考</b></a>
+                    <a class="navbar-item" href="#參考資料">4&nbsp;&nbsp;<b>參考資料</b></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#延伸閱讀">5&nbsp;&nbsp;<b>延伸閱讀</b></a>
                     
                 </div>
             </div>
             
             
-            <a class="navbar-item" title="GitHub" target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-theme-minos">
+            <a class="navbar-item" title="GitHub" target="_blank" rel="noopener" href="https://github.com/verpassen">
                 
                 <i class="fab fa-github"></i>
                 
@@ -175,13 +184,13 @@
     <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            &lt;螺紋&gt; TPI 換算
+            &lt;螺紋&gt; 尺寸與公差
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
             
-                <time datetime="2021-05-30T02:16:39.000Z" itemprop="datePublished">May 30 2021</time>
+                <time datetime="2021-06-17T12:54:23.000Z" itemprop="datePublished">Jun 17 2021</time>
             
         </span>
         
@@ -194,151 +203,160 @@
         <span class="column is-narrow">
             
             
-            3 minutes read (About 487 words)
+            2 minutes read (About 333 words)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <html><head></head><body><h2 id="Thread-Pitch-Vs-Threads-per-inch"><a href="#Thread-Pitch-Vs-Threads-per-inch" class="headerlink" title="Thread Pitch Vs. Threads per inch"></a><strong>Thread Pitch Vs. Threads per inch</strong></h2><h4 id="TPI-thread-per-pitch-每英寸有幾牙"><a href="#TPI-thread-per-pitch-每英寸有幾牙" class="headerlink" title="TPI (thread per pitch) -  每英寸有幾牙"></a>TPI (thread per pitch) -  每英寸有幾牙</h4><p>thread per pitch 簡稱 TPI ，常見於鎖固件的標稱(註.1)</p>
-<ol>
-<li>單位: 英制(US)</li>
-<li>格式: 1/4”-20X2”</li>
-</ol>
-<blockquote>
-<p>1/4” 代表螺紋直徑為1/4英吋<br>每英吋20牙<br>螺紋長度總長2英吋</p>
-</blockquote>
-<h4 id="thread-pitch-牙距"><a href="#thread-pitch-牙距" class="headerlink" title="thread pitch 牙距"></a>thread pitch 牙距</h4><ol>
-<li>單位: 公制(Metric)</li>
-<li>格式: M2X0.4X5M</li>
-</ol>
-<blockquote>
-<p>M2代表螺紋直徑2 公釐(mm)<br>0.4 螺距<br>螺紋長度總長5 公釐 (mm)</p>
-</blockquote>
-<hr>
-<h3 id="TPI-與-Thread-Pitch-的換算"><a href="#TPI-與-Thread-Pitch-的換算" class="headerlink" title="TPI 與 Thread Pitch 的換算"></a><strong>TPI 與 Thread Pitch 的換算</strong></h3><p>舉例 TPI = 24 的 螺紋 相當於 thread pitch 多少?<br>每英寸有24 牙，<br>一英吋 = 25.4 mm<br>換句話說，每25.4 mm 有24 牙<br>也就是牙距為 25.4/24  ~ 1.058 mm</p>
+        <html><head></head><body><h2 id="螺紋-Screw-Thread"><a href="#螺紋-Screw-Thread" class="headerlink" title="螺紋 Screw Thread"></a>螺紋 Screw Thread</h2><p>主要分兩大類， 公制(Metric screw thread)與英制 (Unitfied inch thread)<br>兩者螺紋的輪廓相同</p>
+<p>都是角度為60</p>
+<h2 id="Thread-profile"><a href="#Thread-profile" class="headerlink" title="Thread profile"></a>Thread profile</h2><p>螺距，代表的意義為當螺絲旋轉一圈，前進/後退的移動距離<br>以下用P代表螺紋的螺距。</p>
 <ul>
-<li>Coarse and Fine threading 粗牙 &amp; 細牙<br>舉例而言，M8有 M8 x 1.25 與 M8 x 1.0 </li>
+<li>Basic Major Diameter D<sub>maj</sub>:　</li>
+<li>Basic Pitch Diameter D<sub>p</sub>: 基圓直徑</li>
+<li>Basic Minor Diameter D<sub>min</sub>:</li>
+<li>Fundamental Triagle height H:  </li>
+<li>Pitch P: 牙距/螺距</li>
+</ul>
+<img src="/2021/06/17/year-undefined-17-threading/ISO_and_UTS_Thread_Dimensions.png" width="500" alt="ISO 螺紋">
+
+<p>$$ H = \frac{1}{2\tan\theta}P = \frac{\sqrt{3}}{2}\cdot P \approx 0.866P$$<br>$$ D_{min} = D_{maj} - 2\cdot\frac{5}{8}\cdot H = D_{maj}-\frac{5\sqrt{3}}{8}\cdot P \approx D_{maj}-1.082532\cdot P<br>$$<br>$$D_{p} = D_{maj} - 2\cdot\frac{3}{8}\cdot H=D_{maj}-\frac{3\sqrt{3}}{8}\cdot P \approx D_{maj} - 0.649519\cdot P$$</p>
+<p><img src="https://cloud.degoo.com/share/JVPQo5LQE__I3KBr2vhfvQ" alt="test link"></p>
+<hr>
+<h3 id="粗牙-vs-細牙-Coarse-Vs-Fine"><a href="#粗牙-vs-細牙-Coarse-Vs-Fine" class="headerlink" title="粗牙 vs. 細牙 (Coarse Vs. Fine)"></a>粗牙 vs. 細牙 (Coarse Vs. Fine)</h3><ul>
+<li>   尺寸<table>
+<thead>
+<tr>
+<th align="right">Nominal Diameter D(mm)</th>
+<th align="right">Pitch 螺距P(mm)</th>
+<th align="right"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right"></td>
+<td align="right">粗牙</td>
+<td align="right">細牙</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td align="right">0.25</td>
+<td align="right">0.2</td>
+</tr>
+<tr>
+<td align="right">1.2</td>
+<td align="right">0.25</td>
+<td align="right">0.2</td>
+</tr>
+<tr>
+<td align="right">1.6</td>
+<td align="right">0.35</td>
+<td align="right">0.2</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">0.40</td>
+<td align="right">0.25</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">0.50</td>
+<td align="right">0.35</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">0.70</td>
+<td align="right">0.50</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">0.80</td>
+<td align="right">0.50</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">1.00</td>
+<td align="right">0.50</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">1.25</td>
+<td align="right">1.00</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">1.50</td>
+<td align="right">1.25</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">1.75</td>
+<td align="right">1.25</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td align="right">2.00</td>
+<td align="right">1.5</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td align="right">2.00</td>
+<td align="right">1.5</td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td align="right">2.00</td>
+<td align="right">1.5</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td align="right">2.50</td>
+<td align="right">1.5</td>
+</tr>
+<tr>
+<td align="right">24</td>
+<td align="right">3.00</td>
+<td align="right">2.0</td>
+</tr>
+</tbody></table>
+</li>
 </ul>
 <hr>
-<h2 id="常見的螺紋種類"><a href="#常見的螺紋種類" class="headerlink" title="常見的螺紋種類"></a><strong>常見的螺紋種類</strong></h2><style type="text/css">
-#csstable td,#csstable th {
-        vertical-align: middle;
-        text-align: center;
-    }
-</style>
-<table id="csstable">
-    <tbody><tr>
-        <th>螺紋的種類</th>
-        <th>記號</th>
-        <th>規格標準</th>
-        <th>螺紋角度</th>
-        <th>量具規格標準</th>
-    </tr>
-    <tr>
-        <td rowspan="4">Metric Screw Thread</td>
-        <td rowspan="4">M</td>
-        <td>JIS B 0205</td>
-        <td rowspan="4">60°</td>
-        <td rowspan="4">JIS B 0251</td>
-    </tr>
-    <tr><td>JIS B 0209</td></tr><tr><td>JIS B 0207</td></tr><tr><td>JIS B 2011</td></tr>
-    <tr>
-        <td rowspan="2">Unified Coarse Screw Thread</td>
-        <td rowspan="2">UNC</td>
-        <td>JIS B 0206</td>
-        <td rowspan="2">60°</td>
-        <td rowspan="2">JIS B 0255</td>
-    </tr>    <tr><td>JIS B 0210</td></tr>
-    <tr><td rowspan="2">Unified Fine Screw Thread</td>
-        <td rowspan="2">UNF</td>
-        <td>JIS B 0208</td>
-        <td rowspan="2">60°</td>
-        <td rowspan="2">JIS B 0255</td>
-    </tr>    <tr><td>JIS B 0212</td></tr>
-    <tr>
-        <td rowspan="2">Parallel Pipe Threads</td>
-        <td>G</td>
-        <td rowspan="2">JIS B 0202</td>
-        <td rowspan="2">55°</td>
-        <td rowspan="2">JIS B 0254</td>
-    </tr>    <tr><td>PF</td></tr>
-    <tr>
-        <td>Parallel Pipe thread(inch)</td>
-        <td>G</td>
-        <td>BS 2779</td>
-        <td>55°</td>
-    </tr>
-    <tr>
-        <td rowspan="2">Parallel Pipe thread(inch)<br>(dry seal)</td>
-        <td>NPSF</td>
-        <td rowspan="2">ANSI B1.20.3.1.20.4</td>
-        <td rowspan="2">60°</td>
-        <td rowspan="2">ANSI B1.20.5</td>
-    </tr>    <tr><td>NPSI</td></tr>
-    <tr>
-        <td>Whitworth Coarse Screw Thread</td>
-        <td rowspan="2">G</td>
-        <td>JIS B 0206</td>
-        <td rowspan="2">55°</td>
-        <td>JIS B 0257</td>
-    </tr>
-    <tr>
-        <td>Whitworth Fine Screw Thread</td>
-        <td>JIS B 0208</td>
-        <td>JIS B 0258</td>
-    </tr>
-    <tr>
-        <td>Buttress Screw threads(USA)</td>
-        <td>STUB ACME</td>
-        <td>ANSI/ASME B1.8</td>
-        <td>7°X45°</td>
-        <td>ANSI B1.9</td>
-    </tr>
-    <tr>
-        <td rowspan="2">Taper Pipe Thread</td>
-        <td>R,RC(錐度牙)</td>
-        <td rowspan="2">JIS B 0203</td>
-        <td rowspan="2">55°</td>
-        <td rowspan="2">JIS B 0253</td>
-    </tr>    <tr><td>RP(平行牙)</td></tr>
-    <tr>
-        <td>Taper Pipe Thread</td>
-        <td>PT,PS(平行牙)</td>
-        <td>JIS B 0203 Append.</td>
-        <td>55°</td>
-        <td>JIS B 0253 Append.</td>
-    </tr>
-    <tr>
-        <td>Taper Pipe Thread(ISO)</td>
-        <td>R</td>
-        <td>ISO7-1</td>
-        <td>55°</td>
-        <td>ISO7-2</td>
-    </tr>
-    <tr>
-        <td rowspan="2">Taper Pipe Thread(UK)</td>
-        <td>R,RC(錐度牙)</td>
-        <td rowspan="2">BS21</td>
-        <td rowspan="2">55°</td>
-        <td rowspan="2">BS21</td>
-    </tr>    <tr><td>RP(平行牙)</td></tr>
-    <tr>
-        <td rowspan="2">Taper Pipe Thread(USA)</td>
-        <td>NPT</td>
-        <td rowspan="2">ANSI/ASME B1.20.1</td>
-        <td rowspan="2">60°</td>
-        <td rowspan="2">ANSI/ASME B1.20.1</td>
-    </tr>    <tr><td>NPTR</td></tr>
-    <tr></tr>
+<h2 id="公差-Tolerance"><a href="#公差-Tolerance" class="headerlink" title="公差 Tolerance"></a>公差 Tolerance</h2><p>外螺紋使用小寫字母(例:5g、5g5h)，內螺紋用大寫(例:4G、4H5H)</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>螺絲</th>
+<th>螺帽</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>容許大偏差</td>
+<td>e</td>
+<td></td>
+</tr>
+<tr>
+<td>容許小偏差</td>
+<td>g</td>
+<td>G</td>
+</tr>
+<tr>
+<td>無偏差</td>
+<td>h</td>
+<td>H</td>
+</tr>
 </tbody></table>
-
-<hr>
-<h2 id="註解"><a href="#註解" class="headerlink" title="註解"></a><strong>註解</strong></h2><ol>
-<li>TPI 也用於表示輪胎編織密度，英文縮寫同樣是Thread per inch，<br>代表一英吋中纖維組織的密度。同樣長度的編織密度越密，表示纖維越細，<br>使用的橡膠就較少。</li>
+<h3 id="表示法"><a href="#表示法" class="headerlink" title="表示法"></a>表示法</h3><ol>
+<li>單位: 公制(Metric)</li>
+<li>格式: M6X0.75-5g6g</li>
 </ol>
+<p>M6代表螺紋直徑6 公釐(mm)<br>螺距 0.75 mm<br>5 pitch diameter 的公差等級<br>g pitch diameter 的公差帶位置<br>6 牙尖高度的公差等級<br>g 牙尖高度 的公差帶位置</p>
 <hr>
-<h2 id="參考"><a href="#參考" class="headerlink" title="參考"></a><strong>參考</strong></h2><p><a target="_blank" rel="noopener" href="https://www.teesing.com/tw/page/%E8%B3%87%E8%A8%8A%E4%B8%AD%E5%BF%83/%E5%87%BA%E7%89%88%E7%89%A9/%E8%9E%BA%E7%B4%8B%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%B4%B9/other-threads">螺紋圖面</a></p>
+<h3 id="左螺紋-vs-右螺紋"><a href="#左螺紋-vs-右螺紋" class="headerlink" title="左螺紋 vs. 右螺紋"></a>左螺紋 vs. 右螺紋</h3><hr>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/ISO%E5%85%AC%E5%88%B6%E8%9E%BA%E7%B4%8B">維基百科</a></p>
+<hr>
+<h2 id="延伸閱讀"><a href="#延伸閱讀" class="headerlink" title="延伸閱讀"></a>延伸閱讀</h2><p><a target="_blank" rel="noopener" href="https://www.boltscience.com/index.htm">Bolt Science</a></p>
 </body></html>
     
     </div>
@@ -347,12 +365,12 @@
     <div class="columns is-mobile is-multiline article-nav">
         <span class="column is-12-mobile is-half-desktop  article-nav-prev">
             
-            <a href="/2021/06/01/Face-Grooving/">Face_Grooving</a>
+            <a href="/2021/06/26/year-undefined-26-BT-vs-CAT/">BT vs. CAT(doing)</a>
             
         </span>
         <span class="column is-12-mobile is-half-desktop  article-nav-next">
             
-            <a href="/2021/05/22/stainless-steel/">&lt;Material&gt;stainless_steel</a>
+            <a href="/2021/06/01/year-undefined-01-Face-Grooving/">Face_Grooving</a>
             
         </span>
     </div>
@@ -374,8 +392,8 @@
     
 <script>
     var disqus_config = function () {
-        this.page.url = 'https://verpassen.github.io/2021/05/30/threading-pitch/';
-        this.page.identifier = '2021/05/30/threading-pitch/';
+        this.page.url = 'https://verpassen.github.io/2021/06/17/year-undefined-17-threading/';
+        this.page.identifier = '2021/06/17/year-undefined-17-threading/';
         
         this.language = 'en';
         

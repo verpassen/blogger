@@ -111,7 +111,7 @@
             
             
             
-            <a class="navbar-item" title="GitHub" target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-theme-minos">
+            <a class="navbar-item" title="GitHub" target="_blank" rel="noopener" href="https://github.com/verpassen">
                 
                 <i class="fab fa-github"></i>
                 
@@ -124,203 +124,6 @@
 
     <section class="section">
     <div class="container">
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
-            <a href="/2021/04/25/hexo-post-asset-test/" itemprop="url">hexo - test Record</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            
-                <time datetime="2021-04-25T03:42:23.000Z" itemprop="datePublished">Apr 25 2021</time>
-            
-        </span>
-        
-        <span class="column is-narrow article-category">
-            <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
-        </span>
-        
-        
-        <span class="column is-narrow">
-            
-            
-            3 minutes read (About 452 words)
-        </span>
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <html><head></head><body><p>把圖片放到hexo 上</p>
-<ul>
-<li>修改config.yml<figure class="highlight markdown hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post<span class="hljs-emphasis">_asset_</span>folder: true</span><br></pre></td></tr></tbody></table></figure>
-接著使用 <figure class="highlight markdown hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] 檔名</span><br></pre></td></tr></tbody></table></figure>
-建立 “檔名.md”的同時，也新增一個同”檔名”的資料夾，於是就可以把引用的資料(圖片、檔案)置入</li>
-</ul>
-<hr>
-<ul>
-<li>引用方式<figure class="highlight markdown hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">![](圖片名稱.副檔名)</span><br><span class="line"></span><br><span class="line"><span class="hljs-section">### 試過不行的方式</span></span><br><span class="line">![](hexo-post-asset<span class="hljs-emphasis">_test/example.jpg)</span></span><br><span class="line"><span class="hljs-emphasis">![](hexo-post-asset_</span>test/博士論文.png)</span><br><span class="line">![](./hexo-post-asset<span class="hljs-emphasis">_test/chipbreaker_</span>01.jpg)</span><br><span class="line">![](/img/ISO13399<span class="hljs-emphasis">_turningTool.jpg)</span></span><br></pre></td></tr></tbody></table></figure></li>
-</ul>
-<hr>
-<p>a. 目前疑問</p>
-<ul>
-<li><p>如何調整嵌入圖片大小<br>利用 html tag<br><img src="/2021/04/25/hexo-post-asset-test/axial_grooving_collision.JPG" alt="Face grooving interface" width="400"><br><br>src=’檔案名稱與路徑’  alt=’圖檔顯示名稱’ width=’圖片顯示寬度’ height=’圖片顯示高度’</p>
-</li>
-<li><p>圖片的位置調整</p>
-</li>
-<li><p>如果要放入其他資料夾的圖片怎麼辦?</p>
-</li>
-<li><p>thumbnail 是什麼?</p>
-</li>
-<li><p>圖片有辦法放到表格中嗎? markdown 表示的表格<br>目前測試的結果是，放到表格中，但是調整大小無效<br>格式如下</p>
-</li>
-</ul>
-<p>b. notes: </p>
-<ul>
-<li><p>   允許中文檔名圖片</p>
-</li>
-<li><p>同樣的格式為何有些圖片可以正常顯示，有些不行?<br>  副檔名如果大寫或是小寫，也要照著寫</p>
-</li>
-<li><p>檔名能不能有空格?<br>  是的。檔名不能空白</p>
-</li>
-</ul>
-<h3 id="照片連結"><a href="#照片連結" class="headerlink" title="照片連結"></a>照片連結</h3><figure class="highlight text hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% img url_img width height alt-name%}</span><br></pre></td></tr></tbody></table></figure>
-<p>顯示如下</p>
-<!-- <img src="https://scontent.ftpe4-2.fna.fbcdn.net/v/t1.6435-9/37279473_1946187435443936_2759990712199020544_n.jpg?_nc_cat=111&_nc_map=control&ccb=1-3&_nc_sid=174925&_nc_ohc=9zOeCsHSFNsAX-0Go5G&_nc_ht=scontent.ftpe4-2.fna&oh=969d3413cd4225af5a472692845d5dde&oe=60BEE387" class="" width="500" height="300"> -->
-
-
-<ul>
-<li>問題<br>想顯示雲端硬碟的照片，但無法正常顯示</li>
-</ul>
-<p>測試過的寫法</p>
-<figure class="highlight html hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">url</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">'test link'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">img</span>&gt;</span></span><br><span class="line">![](url)</span><br><span class="line">{% img url width height alt-name%}</span><br></pre></td></tr></tbody></table></figure>
-
-
-<h2 id="Youtube-test"><a href="#Youtube-test" class="headerlink" title="Youtube test"></a>Youtube test</h2><figure class="highlight text hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% youtube youtube_ID %}</span><br></pre></td></tr></tbody></table></figure>
-<p>顯示如下</p>
-<div class="video-container"><iframe src="https://www.youtube.com/embed/sTyIsTZ7NcM" frameborder="0" loading="lazy" allowfullscreen=""></iframe></div>
-
-
-<h2 id="post-asset-test"><a href="#post-asset-test" class="headerlink" title="post-asset test"></a>post-asset test</h2><p>無效的寫法</p>
-<figure class="highlight markdown hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">{% asset<span class="hljs-emphasis">_img machine_</span>coord.jpg  example %}</span><br><span class="line">{% asset<span class="hljs-emphasis">_img chipbreaker_</span>01.jpg  chip breaker %}</span><br></pre></td></tr></tbody></table></figure>
-<p>顯示如下</p>
-
-<img src="/2021/04/25/hexo-post-asset-test/04/25/hexo-post-asset-test/chipbreaker_01.jpg" class="" title="chip breaker">
-<h2 id="table-test"><a href="#table-test" class="headerlink" title="table test"></a>table test</h2><ul>
-<li> 表格垂直置中<table class="selfdefined">
-<tbody><tr> 
-  <th>A</th>
-  <th rowspan="2">B</th>
-  <th colspan="2" align="center">C</th>
-</tr>
-<tr>
-  <td>A1-1<br>A1-2<br>A1-3</td></tr></tbody></table></li>
-</ul>
-<pre><code>&lt;td rowspan="2" &gt;B1-1&lt;/td&gt;
-&lt;td&gt;C1-1&lt;/td&gt;
-</code></pre>
-
-
-    A1-2
-    B1-2
-    C1-2
-
-
-
-
-</body></html>
-    
-    </div>
-    
-    
-</article>
-
-
-
-
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
-            <a href="/2021/04/24/tungaloy-chip-breaker/" itemprop="url">Hexo markdown test(doing)</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            
-                <time datetime="2021-04-24T02:40:49.199Z" itemprop="datePublished">Apr 24 2021</time>
-            
-        </span>
-        
-        <span class="column is-narrow article-category">
-            <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
-        </span>
-        
-        
-        <span class="column is-narrow">
-            
-            
-            a few seconds read (About 62 words)
-        </span>
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <html><head></head><body><h3 id="embeded-photo-in-the-table"><a href="#embeded-photo-in-the-table" class="headerlink" title="embeded photo in the table"></a>embeded photo in the table</h3><p>目前markdown 語法的表格，放進圖片沒辦法正常顯示<br>還沒找到解決方式，替代的形式</p>
-<blockquote>
-<table>
- <tbody><tr>
-   <th>Chip Breaker</th>
-   <th>Rake Angle(deg)</th>    
- </tr>
- <tr>
-   <td>1</td>
-   <td>10</td>
-   <td><img src="/2021/04/24/tungaloy-chip-breaker/chipbreaker_01.JPG" height="50"></td>
- </tr>
- <tr>
-   <td>23</td>
-   <td>6</td>  
-</tr></tbody></table>
-</blockquote>
- <table>
-  <tbody><tr>
-    <th>Chip Breaker</th>
-    <th>Rake Angle(deg)</th>
-    <th>Distance (mm)</th>
-    <th>Picture</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>10</td>
-    <td>10</td>
-    <td><img src="/2021/04/24/tungaloy-chip-breaker/chipbreaker_01.JPG" height="50"></td>
-  </tr>
-  <tr>
-      <td>23</td>
-      <td>6</td>
-      <td>0.2</td>
-      <td><img src="/2021/04/24/tungaloy-chip-breaker/chipbreaker_23.JPG" height="50"></td>
-  </tr>
-</tbody></table> 
-
-<hr>
-
-<!-- <img src='博士論文.png' alt='example' width='100'><br/> -->
-<p><img src="/2021/04/24/tungaloy-chip-breaker/img/ISO13399_insert.JPG"></p>
-<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3></body></html>
-    
-    </div>
-    
-    
-</article>
-
-
-
-
     
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
@@ -1430,7 +1233,7 @@ PLIB 中，APMX = max drill depth
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/2021/04/05/Tool-wear/" itemprop="url">&lt;Cutting-Tools&gt;Tool Wear</a>
+            <a href="/2021/04/05/Tool-wear/" itemprop="url">&lt;Cutting Tools&gt;Tool Wear</a>
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
@@ -1449,7 +1252,7 @@ PLIB 中，APMX = max drill depth
         <span class="column is-narrow">
             
             
-            a few seconds read (About 70 words)
+            2 minutes read (About 338 words)
         </span>
         
     </div>
@@ -1463,7 +1266,24 @@ PLIB 中，APMX = max drill depth
 </code></pre>
 <h3 id="Mechanical-Wear"><a href="#Mechanical-Wear" class="headerlink" title="Mechanical Wear"></a>Mechanical Wear</h3><pre><code>不論溫度高或低，基本上這個磨損機制都會發生，所佔比例不同而已
 </code></pre>
-<h2 id="刀具磨耗判斷的準則"><a href="#刀具磨耗判斷的準則" class="headerlink" title="刀具磨耗判斷的準則"></a>刀具磨耗判斷的準則</h2></body></html>
+<h2 id="刀具磨耗判斷的準則"><a href="#刀具磨耗判斷的準則" class="headerlink" title="刀具磨耗判斷的準則"></a>刀具磨耗判斷的準則</h2><h3 id="依磨損區域區分"><a href="#依磨損區域區分" class="headerlink" title="依磨損區域區分"></a>依磨損區域區分</h3><p>根據ANSI/ASME 的標準，訂定關於單點車削刀具的磨耗標準<br>不適合用於比較不同形狀的刀片，由於其中並沒有考慮到不同形狀刀片的幾何因素，<br>加工的參數和材料特性或是加工過程的材料移除量。 因此，並不適合用來作為比較<br>不同刀具形狀的刀具壽命參數。</p>
+<p>不過這個說明，有標示出刀片在磨損區域可容許的磨耗狀況， 可以做為加工刀具是否還<br>堪用的參考基準。<br>V<sub>BBmax</sub> = 0.6 mm<br>V<sub>BB</sub> = 0.3 mm<br>V<sub>BN</sub> = 1 mm</p>
+<ul>
+<li><p>Rake face (crater wear)</p>
+</li>
+<li><p>Relief face(flank wear)</p>
+</li>
+</ul>
+<h3 id="評估刀具壽命的相關因子"><a href="#評估刀具壽命的相關因子" class="headerlink" title="評估刀具壽命的相關因子"></a>評估刀具壽命的相關因子</h3><ul>
+<li>   刀具使用時間 </li>
+<li>   加工的工件數量</li>
+<li>   刀具加工長度總和</li>
+<li>   加工表面積總和</li>
+<li>   線性相對刀具磨耗量 h<sub>r-s</sub></li>
+</ul>
+<p>作為比較的因子還可以加入損失的刀具質量(Volumetric or mass tool wear)</p>
+<p>$$ lost\ tool\ mass : m_w = \rho_{ct} V_W $$<br>V<sub>w</sub> : Volume tool wear<br>ρ<sub>ct</sub> : Tool density </p>
+</body></html>
     
     </div>
     
@@ -1724,13 +1544,187 @@ T10: 高溫加工 &gt; 冷卻 &gt;人工時效
 
 
     
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2021/03/21/Theoretical-Surface-Roughness/" itemprop="url">&lt;Cutting-Tools&gt;Theoretical Surface Roughness</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            
+                <time datetime="2021-03-21T13:14:04.663Z" itemprop="datePublished">Mar 21 2021</time>
+            
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Roughness/">Roughness</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            a few seconds read (About 91 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><h2 id="單位"><a href="#單位" class="headerlink" title="單位"></a>單位</h2><ul>
+<li>   Ra 基準長度內取算術平均 </li>
+<li>   Rz 十點平均</li>
+<li>   Rmax</li>
+</ul>
+<p>$$4R_a \approx R_z \approx R_{max}$$<br>$$\int_{a}^{b} x^2$$</p>
+<h2 id="計算式"><a href="#計算式" class="headerlink" title="計算式"></a>計算式</h2><p>$$ Theoretical\ Surface\ Roughness\ (\mu m) = \frac{1000f^2}{8r}$$<br>    $$f : feed\ rate\ (mm/rev)$$<br>    $$r : radius\ of\ the\ insert (mm)$$</p>
+<h2 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h2><table>
+<thead>
+<tr>
+<th>Roughness Value Ra(mm)</th>
+<th>Roughness Value(in)</th>
+<th>Grade No.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>50</td>
+<td>2000</td>
+<td>N12</td>
+</tr>
+<tr>
+<td>25</td>
+<td>1000</td>
+<td>N11</td>
+</tr>
+<tr>
+<td>12.5</td>
+<td>500</td>
+<td>N10</td>
+</tr>
+<tr>
+<td>6.3</td>
+<td>250</td>
+<td>N9</td>
+</tr>
+<tr>
+<td>3.2</td>
+<td>125</td>
+<td>N8</td>
+</tr>
+<tr>
+<td>1.6</td>
+<td>63</td>
+<td>N7</td>
+</tr>
+<tr>
+<td>0.8</td>
+<td>32</td>
+<td>N6</td>
+</tr>
+<tr>
+<td>0.4</td>
+<td>16</td>
+<td>N5</td>
+</tr>
+<tr>
+<td>0.2</td>
+<td>8</td>
+<td>N4</td>
+</tr>
+<tr>
+<td>0.1</td>
+<td>4</td>
+<td>N3</td>
+</tr>
+<tr>
+<td>0.05</td>
+<td>2</td>
+<td>N2</td>
+</tr>
+<tr>
+<td>0.025</td>
+<td>1</td>
+<td>N1</td>
+</tr>
+</tbody></table>
+<ul>
+<li>   ISO 1302</li>
+<li>   <a target="_blank" rel="noopener" href="https://www.keyence.com.tw/ss/products/microscope/roughness/line/">Keyence 小教室</a></li>
+</ul>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2021/03/21/Type-of-the-chips/" itemprop="url">&lt;Cutting Tools&gt;Type of the chips</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            
+                <time datetime="2021-03-21T13:13:56.029Z" itemprop="datePublished">Mar 21 2021</time>
+            
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Cutting-tools/">Cutting tools</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            a minute read (About 147 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>切屑已經有不同的研究，針對不同的外型，做命名分類</p>
+<p>例如:<br>(誰、哪一年提出的，參考文章)</p>
+<ul>
+<li>   Flow Type (流れ型)</li>
+<li>   Shera Type(せん断型)</li>
+<li>   Tear Type(むしい型)</li>
+<li>   Crack Type(き裂型)</li>
+</ul>
+<p>(誰、哪一年提出的，參考文章)</p>
+<ul>
+<li>   type 1: Discontinuous chip</li>
+<li>   type 2: Continuous chip</li>
+<li>   type 3: Continuous chip with Build-up edge</li>
+<li>   type 4: Inhomogeneous strain-chip</li>
+</ul>
+<p>同樣是切削，不同的材料特性、切削刀具的幾何設計、加工條件(切削速度，切削進給和切深)<br>讓最後得到的切屑外觀特徵截然不同</p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
     
         
 <nav class="pagination is-centered is-rounded" role="navigation" aria-label="pagination">
     <div class="pagination-previous">
         <a href="/">Prev</a>
     </div>
-    <div class="pagination-next">
+    <div class="pagination-next is-invisible is-hidden-mobile">
         <a href="/page/3/">Next</a>
     </div>
     <ul class="pagination-list is-hidden-mobile">
@@ -1738,8 +1732,6 @@ T10: 高溫加工 &gt; 冷卻 &gt;人工時效
         <li><a class="pagination-link" href="/">1</a></li>
         
         <li><a class="pagination-link is-current" href="/page/2/">2</a></li>
-        
-        <li><a class="pagination-link" href="/page/3/">3</a></li>
         
     </ul>
 </nav>
