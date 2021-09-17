@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <meta charset="utf-8">
-<title>HTML &amp; Symbol - Brent&#39;s Hexo</title>
+<title>為什麼要加 &#34;if __name__ == &#39;__main__&#39;&#34; - Brent&#39;s Hexo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -18,18 +18,20 @@
 
 
 
-    <meta name="description" content="整理一些可以使用在MAKDOWN 的HTML 符號不需遇到符號就要轉成LATEX  TABLE   符號 編碼 符號 編碼 符號 編碼    &quot; &amp;quot; × &amp;times; ÷ &amp;divide;   ← &amp;larr; ↑ &amp;uarr; ↓ &amp;darr;   → &amp;rarr; ∞ &amp;infin; ± &amp;plusmn;">
+    <meta name="description" content="為什麼要加這一段?Python中每個script可以單獨被執行，也可以被當成模組(module)引用。而當被直接執行時， __name__ 這個特徵值 被改成 “__main__“。不然，就會被當成某個被引用的模組名稱 為什麼這樣設計?在 if name &#x3D;&#x3D; “__main__“:這一段後的程式如果會被執行表示目前的這個檔案是被當作主程式在執行因此，後面放的部分，是當目前這個檔案在被當成模組匯入">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTML &amp; Symbol">
-<meta property="og:url" content="https://verpassen.github.io/2021/07/17/year-undefined-17-HTML/index.html">
+<meta property="og:title" content="為什麼要加 &quot;if __name__ &#x3D;&#x3D; &#39;__main__&#39;&quot;">
+<meta property="og:url" content="https://verpassen.github.io/2021/09/07/why-we-use-name/index.html">
 <meta property="og:site_name" content="Brent&#39;s Hexo">
-<meta property="og:description" content="整理一些可以使用在MAKDOWN 的HTML 符號不需遇到符號就要轉成LATEX  TABLE   符號 編碼 符號 編碼 符號 編碼    &quot; &amp;quot; × &amp;times; ÷ &amp;divide;   ← &amp;larr; ↑ &amp;uarr; ↓ &amp;darr;   → &amp;rarr; ∞ &amp;infin; ± &amp;plusmn;">
+<meta property="og:description" content="為什麼要加這一段?Python中每個script可以單獨被執行，也可以被當成模組(module)引用。而當被直接執行時， __name__ 這個特徵值 被改成 “__main__“。不然，就會被當成某個被引用的模組名稱 為什麼這樣設計?在 if name &#x3D;&#x3D; “__main__“:這一段後的程式如果會被執行表示目前的這個檔案是被當作主程式在執行因此，後面放的部分，是當目前這個檔案在被當成模組匯入">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-07-17T02:04:42.000Z">
-<meta property="article:modified_time" content="2021-08-20T01:06:47.411Z">
+<meta property="og:image" content="https://verpassen.github.io/2021/09/07/why-we-use-name/tree.JPG">
+<meta property="article:published_time" content="2021-09-06T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-09-07T15:04:18.317Z">
 <meta property="article:author" content="Brent Chang">
 <meta property="article:tag" content="note">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://verpassen.github.io/2021/09/07/why-we-use-name/tree.JPG">
 
 
 
@@ -123,13 +125,19 @@
                     
                     
                     
-                    <a class="navbar-item" href="#TABLE">1&nbsp;&nbsp;<b>TABLE</b></a>
+                    <a class="navbar-item" href="#為什麼要加這一段">1&nbsp;&nbsp;<b>為什麼要加這一段?</b></a>
                     
                     
                     <hr class="navbar-divider">
                     
                     
-                    <a class="navbar-item" href="#Ref">2&nbsp;&nbsp;<b>Ref</b></a>
+                    <a class="navbar-item" href="#為什麼這樣設計">2&nbsp;&nbsp;<b>為什麼這樣設計?</b></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#測試">3&nbsp;&nbsp;<b>測試</b></a>
                     
                 </div>
             </div>
@@ -151,166 +159,52 @@
     <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            HTML &amp; Symbol
+            為什麼要加 &#34;if __name__ == &#39;__main__&#39;&#34;
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
             
-                <time datetime="2021-07-17T02:04:42.000Z" itemprop="datePublished">Jul 17 2021</time>
+                <time datetime="2021-09-06T16:00:00.000Z" itemprop="datePublished">Sep 7 2021</time>
             
         </span>
         
         <span class="column is-narrow article-category">
             <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/Table/">Table</a>
+            <a class="article-category-link" href="/categories/Python/">Python</a>
         </span>
         
         
         <span class="column is-narrow">
             
             
-            a minute read (About 135 words)
+            2 minutes read (About 336 words)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <html><head></head><body><p>整理一些可以使用在MAKDOWN 的HTML 符號<br>不需遇到符號就要轉成LATEX </p>
-<h2 id="TABLE"><a href="#TABLE" class="headerlink" title="TABLE"></a>TABLE</h2><table>
-<thead>
-<tr>
-<th>符號</th>
-<th>編碼</th>
-<th>符號</th>
-<th>編碼</th>
-<th>符號</th>
-<th>編碼</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>"</td>
-<td><code>&amp;quot;</code></td>
-<td>×</td>
-<td><code>&amp;times;</code></td>
-<td>÷</td>
-<td><code>&amp;divide;</code></td>
-</tr>
-<tr>
-<td>←</td>
-<td><code>&amp;larr;</code></td>
-<td>↑</td>
-<td><code>&amp;uarr;</code></td>
-<td>↓</td>
-<td><code>&amp;darr;</code></td>
-</tr>
-<tr>
-<td>→</td>
-<td><code>&amp;rarr;</code></td>
-<td>∞</td>
-<td><code>&amp;infin;</code></td>
-<td>±</td>
-<td><code>&amp;plusmn;</code></td>
-</tr>
-<tr>
-<td>∫</td>
-<td><code>&amp;int;</code></td>
-<td>°</td>
-<td><code>&amp;deg;</code></td>
-<td>≠</td>
-<td><code>&amp;ne;</code></td>
-</tr>
-<tr>
-<td>≤</td>
-<td><code>&amp;le;</code></td>
-<td>≥</td>
-<td><code>&amp;ge;</code></td>
-<td>‘</td>
-<td><code>&amp;lsquo;</code></td>
-</tr>
-<tr>
-<td>’</td>
-<td><code>&amp;rsquo;</code></td>
-<td>“</td>
-<td><code>&amp;ldquo;</code></td>
-<td>”</td>
-<td><code>&amp;rdquo;</code></td>
-</tr>
-<tr>
-<td>∠</td>
-<td><code>&amp;ang;</code></td>
-<td>⇔</td>
-<td><code>&amp;hArr;</code></td>
-<td>©</td>
-<td><code>&amp;copy;</code></td>
-</tr>
-<tr>
-<td>®</td>
-<td><code>&amp;reg;</code></td>
-<td>§</td>
-<td><code>&amp;sect;</code></td>
-<td>⊥</td>
-<td><code>&amp;perp;</code></td>
-</tr>
-<tr>
-<td>Δ</td>
-<td><code>&amp;Delta;</code></td>
-<td>θ</td>
-<td><code>&amp;theta;</code></td>
-<td>π</td>
-<td><code>&amp;pi;</code></td>
-</tr>
-<tr>
-<td>Ω</td>
-<td><code>&amp;Omega;</code></td>
-<td>ω</td>
-<td><code>&amp;omega;</code></td>
-<td>↵</td>
-<td><code>&amp;crarr;</code></td>
-</tr>
-<tr>
-<td>’</td>
-<td><code>&amp;rsquo;</code></td>
-<td>α</td>
-<td><code>&amp;alpha;</code></td>
-<td>λ</td>
-<td><code>&amp;lambda;</code></td>
-</tr>
-<tr>
-<td>¹</td>
-<td><code>&amp;sup1;</code></td>
-<td>²</td>
-<td><code>&amp;sup2;</code></td>
-<td>³</td>
-<td><code>&amp;sup3;</code></td>
-</tr>
-<tr>
-<td>»</td>
-<td><code>&amp;raquo;</code></td>
-<td>«</td>
-<td><code>&amp;laquo;</code></td>
-<td>≡</td>
-<td><code>&amp;equiv;</code></td>
-</tr>
-<tr>
-<td>¶</td>
-<td><code>&amp;para;</code></td>
-<td>∴</td>
-<td><code>&amp;there4;</code></td>
-<td>Δ</td>
-<td><code>&amp;Delta;</code></td>
-</tr>
-<tr>
-<td>∀</td>
-<td><code>&amp;forall;</code></td>
-<td>∂</td>
-<td><code>&amp;part;</code></td>
-<td>∑</td>
-<td><code>&amp;sum;</code></td>
-</tr>
-</tbody></table>
-<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><p><a target="_blank" rel="noopener" href="https://www.toptal.com/designers/htmlarrows/"></a></p>
-</body></html>
+        <html><head></head><body><h2 id="為什麼要加這一段"><a href="#為什麼要加這一段" class="headerlink" title="為什麼要加這一段?"></a>為什麼要加這一段?</h2><p>Python中每個script可以單獨被執行，也可以被當成模組(module)引用。<br>而當被直接執行時， __name__ 這個特徵值 被改成 “__main__“。<br>不然，就會被當成某個被引用的模組名稱</p>
+<h2 id="為什麼這樣設計"><a href="#為什麼這樣設計" class="headerlink" title="為什麼這樣設計?"></a>為什麼這樣設計?</h2><p>在 if <strong>name</strong> == “__main__“:<br>這一段後的程式如果會被執行<br>表示目前的這個檔案是被當作主程式在執行<br>因此，後面放的部分，是當目前這個檔案在被當成模組匯入時，不想被執行的某段程式或功能</p>
+<p>目前常看到的架構</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span>():</span></span><br><span class="line">	xxx</span><br><span class="line">	Xxxx</span><br><span class="line">	</span><br><span class="line">If __name__ == <span class="hljs-string">'__main__'</span>:</span><br><span class="line">	main()</span><br><span class="line">	</span><br></pre></td></tr></tbody></table></figure>
+
+<p>所以當這個檔案直接被執行，就會執行main這個函數。<br>如果被引用，則什麼都沒做，不過其他script還是可以使用這個檔案中所定義的類別(class)和函數(function)</p>
+<h2 id="測試"><a href="#測試" class="headerlink" title="測試"></a>測試</h2><p>架構如下圖<br><img src="/2021/09/07/why-we-use-name/tree.JPG"></p>
+<p>程式內容</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># main.py</span></span><br><span class="line"><span class="hljs-keyword">from</span> site_package <span class="hljs-keyword">import</span> myfun</span><br><span class="line"></span><br><span class="line">myfun.whoami()</span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># myfun.py</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">whoami</span>():</span></span><br><span class="line">	<span class="hljs-built_in">print</span>(<span class="hljs-string">'the current file has been imported'</span>)</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:</span><br><span class="line">	<span class="hljs-built_in">print</span>(<span class="hljs-string">'the current file is executed as main prog'</span>)</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<p>當執行 </p>
+<figure class="highlight bash hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-variable">$python</span> main.py</span><br></pre></td></tr></tbody></table></figure>
+<p>顯示whoami function 中的內容，不過並沒有輸出下方的文字內容</p>
+<figure class="highlight bash hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ the current file has been imported</span><br></pre></td></tr></tbody></table></figure>
+
+<p>而當執行 </p>
+<figure class="highlight bash hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-variable">$python</span> myfun.py</span><br></pre></td></tr></tbody></table></figure>
+<p>顯示</p>
+<figure class="highlight bash hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ the current file is executed as main prog</span><br></pre></td></tr></tbody></table></figure></body></html>
     
     </div>
     
@@ -318,12 +212,12 @@
     <div class="columns is-mobile is-multiline article-nav">
         <span class="column is-12-mobile is-half-desktop  article-nav-prev">
             
-            <a href="/2021/09/07/why-we-use-name/">為什麼要加 &#34;if __name__ == &#39;__main__&#39;&#34;</a>
+            <a href="/2021/09/11/latex-test/">latex_test</a>
             
         </span>
         <span class="column is-12-mobile is-half-desktop  article-nav-next">
             
-            <a href="/2021/07/12/year-undefined-12-Turning-Tools-standard/">Turning Tools Standard</a>
+            <a href="/2021/07/17/year-undefined-17-HTML/">HTML &amp; Symbol</a>
             
         </span>
     </div>
@@ -345,8 +239,8 @@
     
 <script>
     var disqus_config = function () {
-        this.page.url = 'https://verpassen.github.io/2021/07/17/year-undefined-17-HTML/';
-        this.page.identifier = '2021/07/17/year-undefined-17-HTML/';
+        this.page.url = 'https://verpassen.github.io/2021/09/07/why-we-use-name/';
+        this.page.identifier = '2021/09/07/why-we-use-name/';
         
         this.language = 'en';
         
@@ -371,7 +265,7 @@
     <div class="container">
         <div class="columns content">
             <div class="column is-narrow has-text-centered">
-                &copy; 2021 Brent Chang&nbsp;
+                &copy; 2021 Brent&nbsp;
                 Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
                         target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
             </div>
